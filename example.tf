@@ -8,7 +8,7 @@ resource "aws_instance" "example" {
 
 #one day my prince will come just like one day this policy will actually work.
 
-module "consul" {
-  source  = "hashicorp/consul/aws"
-  version = "0.6.1"
-}
+# module "consul" {
+#   source  = "hashicorp/consul/aws"
+#   version = "0.6.1"
+# }
