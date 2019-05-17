@@ -12,3 +12,13 @@ resource "aws_instance" "example" {
 #   source  = "hashicorp/consul/aws"
 #   version = "0.6.1"
 # }
+
+provider "github" {
+  token        = "${var.github_token}"
+  organization = "${var.github_organization}"
+}
+
+# Add a user to the organization
+#resource "github_membership" "membership_for_user_x" {
+#  # ...
+#}
