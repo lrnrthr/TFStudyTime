@@ -18,7 +18,7 @@ provider "github" {
 #  organization = "${var.github_organization}"
 }
 
-# Add a user to the organization
-#resource "github_membership" "membership_for_user_x" {
-#  # ...
-#}
+data "github_repositories" "example" {
+  query = "org:hashicorp language:Go"
+}
+
