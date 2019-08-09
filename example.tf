@@ -1,3 +1,13 @@
+terraform {
+  backend "remote" {
+    organization = "TFStudyTime"
+
+    workspaces {
+      name = "StudyTimeAwesomeSauce"
+    }
+  }
+}
+
 provider "aws" {
 }
 
